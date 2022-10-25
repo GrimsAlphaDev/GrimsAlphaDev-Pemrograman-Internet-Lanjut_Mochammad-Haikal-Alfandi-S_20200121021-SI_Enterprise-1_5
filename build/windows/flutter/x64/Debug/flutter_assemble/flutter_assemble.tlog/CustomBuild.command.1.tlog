@@ -1,0 +1,28 @@
+^D:\KULIAH\UNIV\SEMESTER 5\PEMROGRAMAN INTERNET LANJUT\FLUTTER_PERTAMA\BUILD\WINDOWS\CMAKEFILES\1C29E3FA53442184365B19311CC26AB5\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env "FLUTTER_ROOT=D:\Dev\flutter sdk\flutter" "PROJECT_DIR=D:\Kuliah\Univ\Semester 5\Pemrograman Internet Lanjut\flutter_pertama" "FLUTTER_ROOT=D:\Dev\flutter sdk\flutter" "FLUTTER_EPHEMERAL_DIR=D:\Kuliah\Univ\Semester 5\Pemrograman Internet Lanjut\flutter_pertama\windows\flutter\ephemeral" "PROJECT_DIR=D:\Kuliah\Univ\Semester 5\Pemrograman Internet Lanjut\flutter_pertama" "FLUTTER_TARGET=D:\Kuliah\Univ\Semester 5\Pemrograman Internet Lanjut\flutter_pertama\lib\main.dart" DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false "PACKAGE_CONFIG=D:\Kuliah\Univ\Semester 5\Pemrograman Internet Lanjut\flutter_pertama\.dart_tool\package_config.json" "D:/Dev/flutter sdk/flutter/packages/flutter_tools/bin/tool_backend.bat" windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\KULIAH\UNIV\SEMESTER 5\PEMROGRAMAN INTERNET LANJUT\FLUTTER_PERTAMA\BUILD\WINDOWS\CMAKEFILES\CC72078479C3D758DB86D78F092028E7\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\KULIAH\UNIV\SEMESTER 5\PEMROGRAMAN INTERNET LANJUT\FLUTTER_PERTAMA\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/Kuliah/Univ/Semester 5/Pemrograman Internet Lanjut/flutter_pertama/windows" "-BD:/Kuliah/Univ/Semester 5/Pemrograman Internet Lanjut/flutter_pertama/build/windows" --check-stamp-file "D:/Kuliah/Univ/Semester 5/Pemrograman Internet Lanjut/flutter_pertama/build/windows/flutter/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

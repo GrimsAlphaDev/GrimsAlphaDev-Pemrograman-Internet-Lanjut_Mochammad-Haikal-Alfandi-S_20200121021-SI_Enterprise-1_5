@@ -1,0 +1,4 @@
+#Tue Oct 25 19:25:00 ICT 2022
+base.0=D\:\\Kuliah\\Univ\\Semester 5\\Pemrograman Internet Lanjut\\flutter_pertama\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

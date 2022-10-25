@@ -1,0 +1,10 @@
+^D:\KULIAH\UNIV\SEMESTER 5\PEMROGRAMAN INTERNET LANJUT\FLUTTER_PERTAMA\BUILD\WINDOWS\CMAKEFILES\C9990EAAD8F31BDFF2FEA83CD964296F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/Kuliah/Univ/Semester 5/Pemrograman Internet Lanjut/flutter_pertama/windows" "-BD:/Kuliah/Univ/Semester 5/Pemrograman Internet Lanjut/flutter_pertama/build/windows" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Kuliah/Univ/Semester 5/Pemrograman Internet Lanjut/flutter_pertama/build/windows/flutter_pertama.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

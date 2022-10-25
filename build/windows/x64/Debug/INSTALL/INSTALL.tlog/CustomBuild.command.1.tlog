@@ -1,0 +1,10 @@
+^D:\KULIAH\UNIV\SEMESTER 5\PEMROGRAMAN INTERNET LANJUT\FLUTTER_PERTAMA\BUILD\WINDOWS\CMAKEFILES\C9990EAAD8F31BDFF2FEA83CD964296F\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
