@@ -119,6 +119,35 @@ void main() {
   // ! memaksa untuk di jalakan atau yakin ada datanya
   print(jurusanns.length);
 
+  
+  // perulangan looping
+  // for plus
+  for (int no = 1; no <= 5; no++) {
+    
+    print(no);
+  }
+
+  // for minus>
+  for (int no = 5; no >= 1; no--) {
+    print(no);
+  }
+
+  // while
+  int no1 = 1;
+  int no2 = 5;
+  while (no1 <= no2) {
+    print(no1);
+    no1++;
+  }
+
+  // do while
+  int no3 = 1;
+  int no4 = 5;
+  do {
+    print(no1);
+    no1++;
+  } while (no3 <= no4);
+
 }
 
 // Function
