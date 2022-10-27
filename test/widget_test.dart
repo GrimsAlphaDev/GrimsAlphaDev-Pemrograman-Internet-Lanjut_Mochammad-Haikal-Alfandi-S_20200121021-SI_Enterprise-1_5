@@ -92,6 +92,19 @@ void main() {
   var n = hitungNilai2(mapel1: 50, mapel2: 2);
   print(n);
   var o = hitungNilai3(79, 100);
+
+   // final keyword => imutable / tidak bisa dirubah
+  // const & final
+  // const
+  // const String mahasiswa ="beben";
+  // final
+  final String mahasiswafk;
+
+  mahasiswafk = "beben";
+  // mahasiswafk = "cecen";
+
+  print(mahasiswafk);
+
 }
 
 // Function

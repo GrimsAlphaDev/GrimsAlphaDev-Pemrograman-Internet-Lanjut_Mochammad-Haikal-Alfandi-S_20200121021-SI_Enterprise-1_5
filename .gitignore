@@ -42,3 +42,6 @@
 # /android/app/debug
 # /android/app/profile
 # /android/app/release
+
+# ignore lib/test.dart
+lib/test.dart
