@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_pertama/app/utils/widget/header.dart';
 import 'package:flutter_pertama/app/utils/widget/sideBar.dart';
 
 import 'package:get/get.dart';
@@ -19,7 +20,20 @@ class HomeView extends GetView<HomeController> {
             ),
             Expanded(
               flex: 15,
-              child: Container(color: Colors.white),
+              child: Column(
+                children: [
+                  header(),
+                  Expanded(
+                      child: Container(
+                    padding: const EdgeInsets.all(50),
+                    margin: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                  ))
+                ],
+              ),
             ),
           ],
         ));
