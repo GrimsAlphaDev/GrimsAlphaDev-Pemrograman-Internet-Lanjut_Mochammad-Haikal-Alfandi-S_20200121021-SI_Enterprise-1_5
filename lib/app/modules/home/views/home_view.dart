@@ -2,6 +2,7 @@ import 'package:antdesign_icons/antdesign_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_pertama/app/utils/style/AppColors.dart';
 import 'package:flutter_pertama/app/utils/widget/header.dart';
+import 'package:flutter_pertama/app/utils/widget/myFriends.dart';
 import 'package:flutter_pertama/app/utils/widget/sideBar.dart';
 import 'package:flutter_pertama/app/utils/widget/upcomingTask.dart';
 
@@ -482,42 +483,16 @@ class HomeView extends GetView<HomeController> {
                                 ],
                               ),
                             ),
-                            Expanded(
-                              child: Row(
-                                children: [
-                                  const UpcomingTask(),
-                                  Expanded(
-                                    child: Column(
-                                      children: [
-                                        Row(
-                                          children: const [
-                                            Text(
-                                              "My Friends",
-                                              style: TextStyle(
-                                                  color: AppColors.primaryText,
-                                                  fontSize: 30),
-                                            ),
-                                            Text(
-                                              "More",
-                                              style: TextStyle(
-                                                  color: AppColors.primaryText,
-                                                  fontSize: 30),
-                                            ),
-                                            Icon(
-                                              AntIcons.arrowRightOutlined,
-                                              color: AppColors.primaryText,
-                                            )
-                                          ],
-                                        ),
-                                        const SizedBox(
-                                          height: 20,
-                                        ),
+                            !context.isPhone
+                                ? Expanded(
+                                    child: Row(
+                                      children: const [
+                                        UpcomingTask(),
+                                        MyFriends(),
                                       ],
                                     ),
-                                  ),
-                                ],
-                              ),
-                            ),
+                                  )
+                                : const UpcomingTask(),
                           ]),
                     ),
                   )
