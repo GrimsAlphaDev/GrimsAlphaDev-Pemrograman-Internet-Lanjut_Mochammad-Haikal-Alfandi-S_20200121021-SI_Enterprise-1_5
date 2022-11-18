@@ -1,5 +1,8 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:flutter_pertama/app/utils/style/AppColors.dart';
 import 'package:get/get.dart';
+import 'package:unicons/unicons.dart';
 import 'package:antdesign_icons/antdesign_icons.dart';
 import 'package:flutter_pertama/app/routes/app_pages.dart';
 
@@ -14,7 +17,7 @@ class SideBar extends StatelessWidget {
       elevation: 0,
       child: Container(
         height: Get.height,
-        color: Colors.blue[100],
+        color: AppColors.primaryBg,
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -48,7 +51,7 @@ class SideBar extends StatelessWidget {
                               Get.currentRoute == '/home'
                                   ? Icons.desktop_mac
                                   : Icons.desktop_mac_outlined,
-                              color: Colors.grey,
+                              color: AppColors.primaryText,
                               size: 30),
                         ),
                         const SizedBox(
@@ -56,7 +59,8 @@ class SideBar extends StatelessWidget {
                         ),
                         const Text(
                           'Home',
-                          style: TextStyle(color: Colors.grey, fontSize: 16),
+                          style: TextStyle(
+                              color: AppColors.primaryText, fontSize: 16),
                         ),
                       ],
                     ),
@@ -80,9 +84,9 @@ class SideBar extends StatelessWidget {
                               : BoxDecoration(),
                           child: Icon(
                               Get.currentRoute == '/task'
-                                  ? Icons.task_alt
-                                  : Icons.task_alt_outlined,
-                              color: Colors.grey,
+                                  ? UniconsLine.cube
+                                  : UniconsLine.cube,
+                              color: AppColors.primaryText,
                               size: 30),
                         ),
                         const SizedBox(
@@ -90,7 +94,8 @@ class SideBar extends StatelessWidget {
                         ),
                         const Text(
                           'Task',
-                          style: TextStyle(color: Colors.grey, fontSize: 16),
+                          style: TextStyle(
+                              color: AppColors.primaryText, fontSize: 16),
                         ),
                       ],
                     ),
@@ -116,7 +121,7 @@ class SideBar extends StatelessWidget {
                               Get.currentRoute == '/friends'
                                   ? AntIcons.heartFilled
                                   : AntIcons.heartOutlined,
-                              color: Colors.grey,
+                              color: AppColors.primaryText,
                               size: 30),
                         ),
                         const SizedBox(
@@ -124,7 +129,8 @@ class SideBar extends StatelessWidget {
                         ),
                         const Text(
                           'Friends',
-                          style: TextStyle(color: Colors.grey, fontSize: 16),
+                          style: TextStyle(
+                              color: AppColors.primaryText, fontSize: 16),
                         ),
                       ],
                     ),
@@ -150,7 +156,7 @@ class SideBar extends StatelessWidget {
                               Get.currentRoute == '/profile'
                                   ? Icons.person
                                   : Icons.person_outline,
-                              color: Colors.grey,
+                              color: AppColors.primaryText,
                               size: 30),
                         ),
                         const SizedBox(
@@ -158,7 +164,8 @@ class SideBar extends StatelessWidget {
                         ),
                         const Text(
                           'Profile',
-                          style: TextStyle(color: Colors.grey, fontSize: 16),
+                          style: TextStyle(
+                              color: AppColors.primaryText, fontSize: 16),
                         ),
                       ],
                     ),

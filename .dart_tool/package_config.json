@@ -158,6 +158,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "unicons",
+      "rootUri": "file:///D:/Dev/flutter%20sdk/flutter/.pub-cache/hosted/pub.dartlang.org/unicons-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///D:/Dev/flutter%20sdk/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.2",
       "packageUri": "lib/",
@@ -170,7 +176,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2022-11-08T09:07:31.224647Z",
+  "generated": "2022-11-17T16:48:00.079830Z",
   "generator": "pub",
   "generatorVersion": "2.18.2"
 }

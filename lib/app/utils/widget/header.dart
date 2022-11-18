@@ -1,7 +1,8 @@
 import 'package:antdesign_icons/antdesign_icons.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_pertama/app/utils/style/AppColors.dart';
 import 'package:get/get.dart';
+import 'package:unicons/unicons.dart';
 
 import 'package:flutter_pertama/app/routes/app_pages.dart';
 
@@ -25,10 +26,11 @@ class header extends StatelessWidget {
               children: const [
                 Text(
                   "Task Management",
-                  style: TextStyle(fontSize: 30, color: Colors.grey),
+                  style: TextStyle(fontSize: 30, color: AppColors.primaryText),
                 ),
                 Text("Manage Task Made easy with friends",
-                    style: TextStyle(fontSize: 16, color: Colors.grey))
+                    style:
+                        TextStyle(fontSize: 16, color: AppColors.primaryText))
               ],
             ),
             const Spacer(
@@ -62,7 +64,8 @@ class header extends StatelessWidget {
             ),
             const Icon(
               AntIcons.bellFilled,
-              color: Colors.grey,
+              color: AppColors.primaryText,
+              size: 30,
             ),
             const SizedBox(
               width: 20,
@@ -85,8 +88,9 @@ class header extends StatelessWidget {
               child: Row(
                 children: const [
                   Text(
-                    "Sign Out",
-                    style: TextStyle(color: Colors.grey),
+                    'Sign Out',
+                    style:
+                        TextStyle(color: AppColors.primaryText, fontSize: 18),
                   ),
                   SizedBox(
                     width: 5,
@@ -95,8 +99,9 @@ class header extends StatelessWidget {
               ),
             ),
             const Icon(
-              AntIcons.logoutOutlined,
+              UniconsLine.signout,
               color: Colors.grey,
+              size: 30,
             ),
           ],
         ),
