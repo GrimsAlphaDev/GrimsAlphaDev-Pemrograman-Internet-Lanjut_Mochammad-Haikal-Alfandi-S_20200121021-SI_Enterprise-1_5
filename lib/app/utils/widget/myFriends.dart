@@ -46,9 +46,8 @@ class MyFriends extends StatelessWidget {
                 child: GridView.builder(
                     shrinkWrap: true,
                     itemCount: 8,
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 3,
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: context.isPhone ? 2 : 3,
                       crossAxisSpacing: 20,
                       mainAxisSpacing: 20,
                     ),
