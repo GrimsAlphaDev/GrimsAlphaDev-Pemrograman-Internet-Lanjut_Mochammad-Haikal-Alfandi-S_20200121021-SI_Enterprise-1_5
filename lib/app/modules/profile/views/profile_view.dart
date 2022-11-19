@@ -1,7 +1,10 @@
 import 'package:antdesign_icons/antdesign_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_pertama/app/routes/app_pages.dart';
 import 'package:flutter_pertama/app/utils/style/AppColors.dart';
 import 'package:flutter_pertama/app/utils/widget/header.dart';
+import 'package:flutter_pertama/app/utils/widget/myTask.dart';
+import 'package:flutter_pertama/app/utils/widget/profileWidget.dart';
 import 'package:flutter_pertama/app/utils/widget/sideBar.dart';
 
 import 'package:get/get.dart';
@@ -63,27 +66,48 @@ class ProfileView extends GetView<ProfileController> {
                             ],
                           ),
                           const Spacer(),
-                          const Icon(
-                            AntIcons.bellFilled,
-                            color: AppColors.primaryText,
-                            size: 30,
+                          GestureDetector(
+                            onTap: () {
+                              Get.defaultDialog(
+                                title: 'Sign Out ',
+                                content: const Text(
+                                    'Are you sure want to sign out ?'),
+                                cancel: ElevatedButton(
+                                  onPressed: () => Get.back(),
+                                  child: const Text('Cancel'),
+                                ),
+                                confirm: ElevatedButton(
+                                  onPressed: () => Get.toNamed(Routes.LOGIN),
+                                  child: const Text('Sign Out'),
+                                ),
+                              );
+                            },
+                            child: Row(
+                              children: const [
+                                Text(
+                                  'Sign Out',
+                                  style: TextStyle(
+                                      color: AppColors.primaryText,
+                                      fontSize: 16),
+                                ),
+                                SizedBox(
+                                  width: 5,
+                                ),
+                                Icon(
+                                  UniconsLine.signout,
+                                  color: Colors.grey,
+                                  size: 30,
+                                ),
+                              ],
+                            ),
                           ),
-                          const SizedBox(
-                            width: 15,
-                          ),
-                          ClipRRect(
-                              borderRadius: BorderRadius.circular(30),
-                              child: const CircleAvatar(
-                                backgroundColor: Colors.amber,
-                                radius: 25,
-                                foregroundImage: NetworkImage(
-                                    'https://images.unsplash.com/photo-1620231150904-a86b9802656a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'),
-                              ))
                         ]),
                       ),
                 Expanded(
                   child: Container(
-                    padding: const EdgeInsets.all(50),
+                    padding: !context.isPhone
+                        ? const EdgeInsets.all(50)
+                        : const EdgeInsets.all(20),
                     margin: !context.isPhone
                         ? const EdgeInsets.all(10)
                         : const EdgeInsets.all(0),
@@ -92,6 +116,25 @@ class ProfileView extends GetView<ProfileController> {
                       borderRadius: !context.isPhone
                           ? BorderRadius.circular(50)
                           : BorderRadius.circular(30),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const [
+                        ProfileWidget(),
+                        Text(
+                          "My Task",
+                          style: TextStyle(
+                              color: AppColors.primaryText, fontSize: 30),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        SizedBox(
+                          height: 200,
+                          child: MyTask(),
+                        )
+                      ],
                     ),
                   ),
                 )
@@ -103,4 +146,3 @@ class ProfileView extends GetView<ProfileController> {
     );
   }
 }
-

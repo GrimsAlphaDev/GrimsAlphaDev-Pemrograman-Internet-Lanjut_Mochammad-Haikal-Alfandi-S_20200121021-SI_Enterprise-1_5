@@ -95,13 +95,13 @@ class header extends StatelessWidget {
                   SizedBox(
                     width: 5,
                   ),
+                  Icon(
+                    UniconsLine.signout,
+                    color: Colors.grey,
+                    size: 30,
+                  ),
                 ],
               ),
-            ),
-            const Icon(
-              UniconsLine.signout,
-              color: Colors.grey,
-              size: 30,
             ),
           ],
         ),
