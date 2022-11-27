@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "769350708822",
+    "project_id": "task-management-apps-2c73e",
+    "storage_bucket": "task-management-apps-2c73e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769350708822:android:74a6a3b284126a39ea55f7",
+        "android_client_info": {
+          "package_name": "com.example.flutter_pertama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769350708822-itojbdjb57gj1ent29ql0of0uspc7edo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWQl16dsgcWvxL4GFe8_7zvCZEQLWODTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769350708822-itojbdjb57gj1ent29ql0of0uspc7edo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

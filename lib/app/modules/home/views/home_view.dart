@@ -49,8 +49,8 @@ class HomeView extends GetView<HomeController> {
                               color: AppColors.primaryText,
                             ),
                             const SizedBox(
-                              width: 15,
-                            ),
+                                // width: 15,
+                                ),
                             Column(
                               // mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -61,10 +61,12 @@ class HomeView extends GetView<HomeController> {
                                       fontSize: 20,
                                       color: AppColors.primaryText),
                                 ),
-                                Text("Manage Task Made easy with friends",
-                                    style: TextStyle(
-                                        fontSize: 14,
-                                        color: AppColors.primaryText))
+                                Text(
+                                  "Manage Task Made easy with friends",
+                                  style: TextStyle(
+                                      fontSize: 14,
+                                      color: AppColors.primaryText),
+                                ),
                               ],
                             ),
                             const Spacer(),
@@ -74,17 +76,17 @@ class HomeView extends GetView<HomeController> {
                               size: 30,
                             ),
                             const SizedBox(
-                              width: 15,
-                            ),
+                                // width: 15,
+                                ),
                             ClipRRect(
                               borderRadius: BorderRadius.circular(30),
                               child: const CircleAvatar(
                                 backgroundColor: Colors.amber,
-                                radius: 25,
+                                radius: 20,
                                 foregroundImage: NetworkImage(
                                     'https://images.unsplash.com/photo-1620231150904-a86b9802656a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'),
                               ),
-                            )
+                            ),
                           ]),
                         ),
                   Expanded(
@@ -105,7 +107,7 @@ class HomeView extends GetView<HomeController> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             SizedBox(
-                              height: Get.height * 0.3,
+                              height: 290,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: const [

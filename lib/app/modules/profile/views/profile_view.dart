@@ -38,7 +38,7 @@ class ProfileView extends GetView<ProfileController> {
                     : Container(
                         // content / isi page / screen
 
-                        padding: const EdgeInsets.all(20),
+                        padding: const EdgeInsets.only(top: 30, bottom: 20),
                         child: Row(children: [
                           IconButton(
                             onPressed: () {
@@ -48,8 +48,8 @@ class ProfileView extends GetView<ProfileController> {
                             color: AppColors.primaryText,
                           ),
                           const SizedBox(
-                            width: 15,
-                          ),
+                              // width: 15,
+                              ),
                           Column(
                             // mainAxisAlignment: MainAxisAlignment.start,
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -65,7 +65,9 @@ class ProfileView extends GetView<ProfileController> {
                                       color: AppColors.primaryText))
                             ],
                           ),
-                          const Spacer(),
+                          const SizedBox(
+                            width: 10,
+                          ),
                           GestureDetector(
                             onTap: () {
                               Get.defaultDialog(
@@ -126,9 +128,6 @@ class ProfileView extends GetView<ProfileController> {
                           "My Task",
                           style: TextStyle(
                               color: AppColors.primaryText, fontSize: 30),
-                        ),
-                        SizedBox(
-                          height: 20,
                         ),
                         SizedBox(
                           height: 200,
