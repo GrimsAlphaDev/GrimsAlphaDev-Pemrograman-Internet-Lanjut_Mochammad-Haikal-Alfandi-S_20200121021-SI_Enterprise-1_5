@@ -60,7 +60,7 @@ class FriendsView extends GetView<FriendsController> {
                                       color: AppColors.primaryText),
                                 ),
                                 Text(
-                                  "Manage Task Made easy with friends",
+                                  "Manage Task Made Easy",
                                   style: TextStyle(
                                       fontSize: 14,
                                       color: AppColors.primaryText),

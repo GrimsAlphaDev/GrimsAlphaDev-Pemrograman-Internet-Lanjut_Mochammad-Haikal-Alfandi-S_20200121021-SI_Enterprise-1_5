@@ -51,8 +51,8 @@ class ProfileView extends GetView<ProfileController> {
                               color: AppColors.primaryText,
                             ),
                             const SizedBox(
-                                // width: 15,
-                                ),
+                              width: 15,
+                            ),
                             Column(
                               // mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,14 +63,14 @@ class ProfileView extends GetView<ProfileController> {
                                       fontSize: 20,
                                       color: AppColors.primaryText),
                                 ),
-                                Text("Manage Task Made easy with friends",
+                                Text("Manage Task Made Easy",
                                     style: TextStyle(
                                         fontSize: 14,
                                         color: AppColors.primaryText))
                               ],
                             ),
                             SizedBox(
-                              width: !context.isPhone ? 100 : 10,
+                              width: !context.isPhone ? 100 : 50,
                             ),
                             GestureDetector(
                               onTap: () {
