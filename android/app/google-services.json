@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "769350708822-pm8jphit3hv4mk31rh2k0ekj1q620qv8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_pertama",
+            "certificate_hash": "221a3754c700cc2123344f6314c9a92dcca50fd9"
+          }
+        },
+        {
           "client_id": "769350708822-itojbdjb57gj1ent29ql0of0uspc7edo.apps.googleusercontent.com",
           "client_type": 3
         }
