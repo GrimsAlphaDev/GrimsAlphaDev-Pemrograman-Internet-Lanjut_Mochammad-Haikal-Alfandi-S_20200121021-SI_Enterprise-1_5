@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_pertama/app/data/controller/auth_controller.dart';
 import 'package:flutter_pertama/app/routes/app_pages.dart';
 
 import 'package:get/get.dart';
@@ -7,7 +8,8 @@ import '../controllers/login_controller.dart';
 import 'package:antdesign_icons/antdesign_icons.dart';
 
 class LoginView extends GetView<LoginController> {
-  const LoginView({Key? key}) : super(key: key);
+  final authC = Get.find<AuthController>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -92,7 +94,7 @@ class LoginView extends GetView<LoginController> {
                       Image.asset('assets/images/login.png',
                           height: Get.height * 0.5),
                       FloatingActionButton.extended(
-                        onPressed: () => Get.toNamed(Routes.HOME),
+                        onPressed: () => authC.signInWithGoogle(),
                         label: const Text("Sign in with google"),
                         icon: const Icon(AntIcons.googleOutlined),
                       )

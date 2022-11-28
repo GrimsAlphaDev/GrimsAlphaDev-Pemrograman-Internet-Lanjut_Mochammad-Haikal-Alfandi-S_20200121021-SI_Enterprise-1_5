@@ -134,6 +134,36 @@
       "languageVersion": "2.15"
     },
     {
+      "name": "google_sign_in",
+      "rootUri": "file:///D:/Dev/flutter%20sdk/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in-5.4.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "google_sign_in_android",
+      "rootUri": "file:///D:/Dev/flutter%20sdk/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_android-6.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "google_sign_in_ios",
+      "rootUri": "file:///D:/Dev/flutter%20sdk/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_ios-5.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "google_sign_in_platform_interface",
+      "rootUri": "file:///D:/Dev/flutter%20sdk/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_platform_interface-2.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "google_sign_in_web",
+      "rootUri": "file:///D:/Dev/flutter%20sdk/flutter/.pub-cache/hosted/pub.dartlang.org/google_sign_in_web-0.10.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "http_parser",
       "rootUri": "file:///D:/Dev/flutter%20sdk/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.2",
       "packageUri": "lib/",
@@ -196,6 +226,12 @@
     {
       "name": "plugin_platform_interface",
       "rootUri": "file:///D:/Dev/flutter%20sdk/flutter/.pub-cache/hosted/pub.dartlang.org/plugin_platform_interface-2.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "quiver",
+      "rootUri": "file:///D:/Dev/flutter%20sdk/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -266,7 +302,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2022-11-28T04:30:45.510844Z",
+  "generated": "2022-11-28T04:45:28.901890Z",
   "generator": "pub",
   "generatorVersion": "2.18.2"
 }
