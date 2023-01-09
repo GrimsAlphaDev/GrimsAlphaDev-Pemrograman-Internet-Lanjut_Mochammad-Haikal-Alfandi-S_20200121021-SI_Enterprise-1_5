@@ -1,31 +1,33 @@
-2023/01/09-13:02:45.760 5ba8 Reusing MANIFEST C:\Users\mhaik\AppData\Local\Temp\flutter_tools.98050486\flutter_tools_chrome_device.b248c254\Default\IndexedDB\http_localhost_5000.indexeddb.leveldb/MANIFEST-000001
-2023/01/09-13:02:45.761 5ba8 Recovering log #41
-2023/01/09-13:02:45.761 5ba8 Reusing old log C:\Users\mhaik\AppData\Local\Temp\flutter_tools.98050486\flutter_tools_chrome_device.b248c254\Default\IndexedDB\http_localhost_5000.indexeddb.leveldb/000041.log 
-2023/01/09-13:02:45.761 5ba8 Delete type=0 #6
-2023/01/09-13:02:45.761 5ba8 Delete type=2 #7
-2023/01/09-13:02:45.761 5ba8 Delete type=0 #9
-2023/01/09-13:02:45.761 5ba8 Delete type=2 #11
-2023/01/09-13:02:45.761 5ba8 Delete type=0 #13
-2023/01/09-13:02:45.761 5ba8 Delete type=2 #15
-2023/01/09-13:02:45.762 5ba8 Delete type=0 #17
-2023/01/09-13:02:45.762 5ba8 Delete type=2 #19
-2023/01/09-13:02:45.762 5ba8 Delete type=0 #21
-2023/01/09-13:02:45.762 5ba8 Delete type=2 #23
-2023/01/09-13:02:45.762 5ba8 Delete type=0 #25
-2023/01/09-13:02:45.762 5ba8 Delete type=2 #27
-2023/01/09-13:02:45.762 5ba8 Delete type=0 #29
-2023/01/09-13:02:45.762 5ba8 Delete type=2 #31
-2023/01/09-13:02:45.762 5ba8 Delete type=0 #33
-2023/01/09-13:02:45.762 5ba8 Delete type=2 #35
-2023/01/09-13:02:45.762 5ba8 Delete type=0 #37
-2023/01/09-13:02:45.762 5ba8 Delete type=2 #39
-2023/01/09-13:02:45.838 2c3c Level-0 table #46: started
-2023/01/09-13:02:45.840 2c3c Level-0 table #46: 7328 bytes OK
-2023/01/09-13:02:45.843 2c3c Delete type=0 #41
-2023/01/09-13:02:45.843 2c3c Manual compaction at level-0 from '\x00\x0f\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0f\x00\x00\x05' @ 662 : 1
-2023/01/09-13:02:45.843 2c3c Compacting 1@0 + 1@1 files
-2023/01/09-13:02:45.845 2c3c Generated table #47@0: 140 keys, 5376 bytes
-2023/01/09-13:02:45.845 2c3c Compacted 1@0 + 1@1 files => 5376 bytes
-2023/01/09-13:02:45.846 2c3c compacted to: files[ 0 1 1 0 0 0 0 ]
-2023/01/09-13:02:45.846 2c3c Delete type=2 #46
-2023/01/09-13:02:45.847 2c3c Manual compaction at level-0 from '\x00\x0f\x00\x00\x05' @ 662 : 1 .. '\x00\x10\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/01/09-13:41:32.648 3fec Reusing MANIFEST C:\Users\mhaik\AppData\Local\Temp\flutter_tools.3f56317f\flutter_tools_chrome_device.2c0727f0\Default\IndexedDB\http_localhost_5000.indexeddb.leveldb/MANIFEST-000001
+2023/01/09-13:41:32.648 3fec Recovering log #45
+2023/01/09-13:41:32.649 3fec Reusing old log C:\Users\mhaik\AppData\Local\Temp\flutter_tools.3f56317f\flutter_tools_chrome_device.2c0727f0\Default\IndexedDB\http_localhost_5000.indexeddb.leveldb/000045.log 
+2023/01/09-13:41:32.649 3fec Delete type=0 #6
+2023/01/09-13:41:32.649 3fec Delete type=2 #7
+2023/01/09-13:41:32.649 3fec Delete type=0 #9
+2023/01/09-13:41:32.649 3fec Delete type=2 #11
+2023/01/09-13:41:32.649 3fec Delete type=0 #13
+2023/01/09-13:41:32.649 3fec Delete type=2 #15
+2023/01/09-13:41:32.649 3fec Delete type=0 #17
+2023/01/09-13:41:32.649 3fec Delete type=2 #19
+2023/01/09-13:41:32.649 3fec Delete type=0 #21
+2023/01/09-13:41:32.649 3fec Delete type=2 #23
+2023/01/09-13:41:32.649 3fec Delete type=0 #25
+2023/01/09-13:41:32.649 3fec Delete type=2 #27
+2023/01/09-13:41:32.649 3fec Delete type=0 #29
+2023/01/09-13:41:32.649 3fec Delete type=2 #31
+2023/01/09-13:41:32.649 3fec Delete type=0 #33
+2023/01/09-13:41:32.649 3fec Delete type=2 #35
+2023/01/09-13:41:32.649 3fec Delete type=0 #37
+2023/01/09-13:41:32.649 3fec Delete type=2 #39
+2023/01/09-13:41:32.649 3fec Delete type=0 #41
+2023/01/09-13:41:32.649 3fec Delete type=2 #43
+2023/01/09-13:41:32.718 4980 Level-0 table #50: started
+2023/01/09-13:41:32.719 4980 Level-0 table #50: 4083 bytes OK
+2023/01/09-13:41:32.720 4980 Delete type=0 #45
+2023/01/09-13:41:32.720 4980 Manual compaction at level-0 from '\x00\x10\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x11\x00\x00\x00' @ 0 : 0; will stop at '\x00\x10\x00\x00\x05' @ 707 : 1
+2023/01/09-13:41:32.720 4980 Compacting 1@0 + 1@1 files
+2023/01/09-13:41:32.721 4980 Generated table #51@0: 140 keys, 5371 bytes
+2023/01/09-13:41:32.721 4980 Compacted 1@0 + 1@1 files => 5371 bytes
+2023/01/09-13:41:32.722 4980 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/01/09-13:41:32.722 4980 Delete type=2 #50
+2023/01/09-13:41:32.722 1470 Manual compaction at level-0 from '\x00\x10\x00\x00\x05' @ 707 : 1 .. '\x00\x11\x00\x00\x00' @ 0 : 0; will stop at (end)
