@@ -83,14 +83,27 @@ class TaskController extends GetxController {
         'description': description,
         'due_date': dueDate,
       }).whenComplete(() async {
-        await usersColl.doc(authCon.auth.currentUser!.email).set({
-          'task_id': FieldValue.arrayUnion([taskId])
-        }, SetOptions(merge: true));
+        // await usersColl.doc(authCon.auth.currentUser!.email).set({
+        //   'task_id': FieldValue.arrayUnion([taskId])
+        // }, SetOptions(merge: true));
         Get.back();
         Get.snackbar('Task', 'Successfuly $type');
       }).catchError((error) {
         Get.snackbar('Error', 'Successfuly $type');
       });
     }
+  }
+
+  void deleteTask(String taskId) async {
+    CollectionReference taskColl = Firestore.collection('task');
+    CollectionReference usersColl = Firestore.collection('users');
+
+    await taskColl.doc(taskId).delete().whenComplete(() async {
+      await usersColl.doc(auth.currentUser!.email).set({
+        'task_id': FieldValue.arrayRemove([taskId])
+      }, SetOptions(merge: true));
+      Get.back();
+      Get.snackbar('Task', 'Successfuly deleted');
+    });
   }
 }
