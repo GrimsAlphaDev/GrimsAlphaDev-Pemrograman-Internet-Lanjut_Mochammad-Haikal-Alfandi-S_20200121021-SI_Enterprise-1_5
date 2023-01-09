@@ -5,6 +5,7 @@ import 'package:flutter_pertama/app/routes/app_pages.dart';
 import 'package:flutter_pertama/app/utils/style/AppColors.dart';
 import 'package:flutter_pertama/app/utils/widget/header.dart';
 import 'package:flutter_pertama/app/utils/widget/myTask.dart';
+import 'package:flutter_pertama/app/utils/widget/peopleYouMayKnow.dart';
 import 'package:flutter_pertama/app/utils/widget/profileWidget.dart';
 import 'package:flutter_pertama/app/utils/widget/sideBar.dart';
 
@@ -15,7 +16,7 @@ import '../controllers/profile_controller.dart';
 
 class ProfileView extends GetView<ProfileController> {
   final GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
-  final authC = Get.find<AuthController>();
+  final authConn = Get.find<AuthController>();
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +84,7 @@ class ProfileView extends GetView<ProfileController> {
                                     child: const Text('Cancel'),
                                   ),
                                   confirm: ElevatedButton(
-                                    onPressed: () => authC.logout(),
+                                    onPressed: () => authConn.logout(),
                                     child: const Text('Sign Out'),
                                   ),
                                 );
@@ -126,16 +127,16 @@ class ProfileView extends GetView<ProfileController> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
+                        children: [
                           ProfileWidget(),
-                          Text(
-                            "My Task",
+                          const Text(
+                            "People You May Know",
                             style: TextStyle(
                                 color: AppColors.primaryText, fontSize: 30),
                           ),
                           SizedBox(
                             height: 200,
-                            child: MyTask(),
+                            child: PeopleYouMightKnow(),
                           )
                         ],
                       ),

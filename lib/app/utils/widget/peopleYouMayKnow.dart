@@ -36,7 +36,7 @@ class PeopleYouMightKnow extends StatelessWidget {
                       child: Image(
                         image: NetworkImage(hasil['photo']),
                         height: 200,
-                        width: Get.width * 0.4,
+                        width: 220,
                         fit: BoxFit.cover,
                       ),
                     ),

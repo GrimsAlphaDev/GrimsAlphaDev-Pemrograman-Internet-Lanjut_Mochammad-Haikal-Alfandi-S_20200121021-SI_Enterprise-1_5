@@ -1,9 +1,11 @@
 import 'package:antdesign_icons/antdesign_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_pertama/app/data/controller/auth_controller.dart';
 import 'package:flutter_pertama/app/utils/style/AppColors.dart';
 import 'package:flutter_pertama/app/utils/widget/header.dart';
 import 'package:flutter_pertama/app/utils/widget/myFriends.dart';
 import 'package:flutter_pertama/app/utils/widget/myTask.dart';
+import 'package:flutter_pertama/app/utils/widget/peopleYouMayKnow.dart';
 import 'package:flutter_pertama/app/utils/widget/sideBar.dart';
 import 'package:flutter_pertama/app/utils/widget/upcomingTask.dart';
 
@@ -14,6 +16,7 @@ import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
   final GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
+  final authCon = Get.find<AuthController>();
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +41,6 @@ class HomeView extends GetView<HomeController> {
                       ? const header()
                       : Container(
                           // content / isi page / screen
-
                           padding: const EdgeInsets.all(20),
                           child: Row(children: [
                             IconButton(
@@ -80,11 +82,11 @@ class HomeView extends GetView<HomeController> {
                                 ),
                             ClipRRect(
                               borderRadius: BorderRadius.circular(30),
-                              child: const CircleAvatar(
+                              child: CircleAvatar(
                                 backgroundColor: Colors.amber,
                                 radius: 20,
                                 foregroundImage: NetworkImage(
-                                    'https://images.unsplash.com/photo-1620231150904-a86b9802656a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'),
+                                    authCon.auth.currentUser!.photoURL!),
                               ),
                             ),
                           ]),
@@ -110,31 +112,30 @@ class HomeView extends GetView<HomeController> {
                               height: 290,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
-                                  Text(
-                                    "My Task",
+                                children: [
+                                  const Text(
+                                    "People You May Know",
                                     style: TextStyle(
                                         color: AppColors.primaryText,
                                         fontSize: 30),
                                   ),
-                                  SizedBox(
-                                    height: 20,
-                                  ),
                                   // My Task
-                                  MyTask(),
+                                  PeopleYouMightKnow(),
                                 ],
                               ),
                             ),
                             !context.isPhone
                                 ? Expanded(
                                     child: Row(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
-                                        UpcomingTask(),
+                                        MyTask(),
                                         MyFriends(),
                                       ],
                                     ),
                                   )
-                                : const UpcomingTask(),
+                                : MyTask(),
                           ]),
                     ),
                   )

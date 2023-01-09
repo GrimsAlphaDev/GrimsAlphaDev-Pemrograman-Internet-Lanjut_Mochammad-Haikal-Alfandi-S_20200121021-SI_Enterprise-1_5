@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_pertama/app/data/controller/auth_controller.dart';
 import 'package:flutter_pertama/app/utils/style/AppColors.dart';
 import 'package:get/get.dart';
 
 class ProfileWidget extends StatelessWidget {
-  const ProfileWidget({
-    Key? key,
-  }) : super(key: key);
+  final authConn = Get.find<AuthController>();
 
   @override
   Widget build(BuildContext context) {
@@ -13,14 +12,14 @@ class ProfileWidget extends StatelessWidget {
       child: !context.isPhone
           ? Row(
               children: [
-                const Expanded(
+                Expanded(
                   flex: 1,
                   child: ClipRRect(
                     child: CircleAvatar(
                       backgroundColor: Colors.amber,
                       radius: 140,
-                      foregroundImage: NetworkImage(
-                          'https://images.unsplash.com/photo-1620231150904-a86b9802656a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'),
+                      foregroundImage:
+                          NetworkImage(authConn.auth.currentUser!.photoURL!),
                     ),
                   ),
                 ),
@@ -32,15 +31,15 @@ class ProfileWidget extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       Text(
-                        "George William",
-                        style: TextStyle(
+                        authConn.auth.currentUser!.displayName!,
+                        style: const TextStyle(
                             color: AppColors.primaryText, fontSize: 40),
                       ),
                       Text(
-                        "GeorgeW@hotmail.com",
-                        style: TextStyle(
+                        authConn.auth.currentUser!.email!,
+                        style: const TextStyle(
                             color: AppColors.primaryText, fontSize: 16),
                       ),
                     ],
@@ -50,30 +49,30 @@ class ProfileWidget extends StatelessWidget {
             )
           : Center(
               child: Column(
-                children: const [
-                  SizedBox(
+                children: [
+                  const SizedBox(
                     height: 30,
                   ),
                   ClipRRect(
                     child: CircleAvatar(
                       backgroundColor: Colors.amber,
                       radius: 120,
-                      foregroundImage: NetworkImage(
-                          'https://images.unsplash.com/photo-1620231150904-a86b9802656a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'),
+                      foregroundImage:
+                          NetworkImage(authConn.auth.currentUser!.photoURL!),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Text(
-                    "George William",
-                    style:
-                        TextStyle(color: AppColors.primaryText, fontSize: 40),
+                    authConn.auth.currentUser!.displayName!,
+                    style: const TextStyle(
+                        color: AppColors.primaryText, fontSize: 40),
                   ),
                   Text(
-                    "GeorgeW@hotmail.com",
-                    style:
-                        TextStyle(color: AppColors.primaryText, fontSize: 16),
+                    authConn.auth.currentUser!.email!,
+                    style: const TextStyle(
+                        color: AppColors.primaryText, fontSize: 16),
                   ),
                 ],
               ),
